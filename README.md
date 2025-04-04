@@ -13,7 +13,7 @@ This project analyzes stock market volatility using historical price data, stati
 **Outputs:** Interactive charts, volatility forecasts, and risk metrics.
 
 ### 🛠️ Tools & Technologies
-**Python:** pandas, numpy, matplotlib, seaborn, yfinance (Yahoo Finance API)
+**R:**  quantmod (Yahoo Finance API) PerformanceAnalytics (Financial metrics) ggplot2 (Visualization)
 
 **Volatility Models:** GARCH (via arch library), rolling statistics
 
@@ -33,12 +33,20 @@ StockMarketVolatilityAnalysis/
 └── requirements.txt         # Dependencies
 ```
 
+### 🔍 Key Features
+**Data Collection:** Fetches historical stock data using quantmod
 
-### 🔍 Key Findings
-Identified periods of high volatility correlated with macroeconomic events (e.g., Fed rate hikes).
+**Volatility Calculation:** Computes 30-day rolling volatility (annualized)
 
-GARCH(1,1) model effectively predicted short-term volatility spikes.
+**Visualization:** Compares volatility trends with ggplot2
 
-Sector-specific analysis revealed tech stocks (NASDAQ) as more volatile than utilities.
+**Stocks Analyzed:** Apple, Microsoft, Amazon, Tesla
+
+### 📌 Key Findings
+Tesla (TSLA) showed the highest volatility among analyzed stocks
+
+All stocks exhibited increased volatility during market shocks (e.g., 2022 Fed rate hikes)
+
+Microsoft (MSFT) demonstrated the most stable volatility profile
 
 
